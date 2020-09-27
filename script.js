@@ -36,7 +36,7 @@ function checkNumber(message) {
 
   if (Number.isNaN(number)) {
     messageElement.innerHTML += `
-      <div>
+    <div>
         That Is Not A Valid Number
       </div>
     `;
@@ -66,11 +66,23 @@ function checkNumber(message) {
   } else if (number > randomNum) {
     messageElement.innerHTML = `
       <div>
+      You Said:
+      </div>
+      <span class="box" >
+        ${number}
+      </span>
+      <div>
         Guess A Lower Number!
       </div>
     `;
   } else {
     messageElement.innerHTML = `
+      <div>
+        You Said:
+      </div>
+      <span class="box" >
+        ${number}
+      </span>
       <div>
         Guess A Higher Number!
       </div>
